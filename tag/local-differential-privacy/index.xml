@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Privacy | Dominick&#39;s Homepage</title>
-    <link>https://dominickrei.github.io/tag/data-privacy/</link>
-      <atom:link href="https://dominickrei.github.io/tag/data-privacy/index.xml" rel="self" type="application/rss+xml" />
-    <description>Data Privacy</description>
+    <title>Local Differential Privacy | Dominick&#39;s Homepage</title>
+    <link>https://dominickrei.github.io/tag/local-differential-privacy/</link>
+      <atom:link href="https://dominickrei.github.io/tag/local-differential-privacy/index.xml" rel="self" type="application/rss+xml" />
+    <description>Local Differential Privacy</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 05 Feb 2022 12:38:08 -0500</lastBuildDate>
     <image>
       <url>https://dominickrei.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
-      <title>Data Privacy</title>
-      <link>https://dominickrei.github.io/tag/data-privacy/</link>
+      <title>Local Differential Privacy</title>
+      <link>https://dominickrei.github.io/tag/local-differential-privacy/</link>
     </image>
     
     <item>
@@ -59,15 +59,6 @@
 &lt;li&gt;Using a heuristic and privacy constraint, we can create a provably private mechanism by solving the emerging optimization problem&lt;/li&gt;
 &lt;li&gt;The mechanism in this paper is relatively simple ($q$ is a discrete distribution,) but can be extended to more complex mechanisms&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>DP-Shield</title>
-      <link>https://dominickrei.github.io/project/dpshield/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://dominickrei.github.io/project/dpshield/</guid>
-      <description>&lt;p&gt;DP-Shield is an aggregation and comprehensive evaluation of differentially private image obfuscation techniques.&lt;/p&gt;
 </description>
     </item>
     

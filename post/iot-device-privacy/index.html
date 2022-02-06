@@ -60,10 +60,10 @@
   
     
   
-  <meta name="description" content="PhD Student" />
+  <meta name="description" content="Applying local differential privacy to a sequence of packets" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://dominickrei.github.io/tag/%E5%BC%80%E6%BA%90/" />
+  <link rel="alternate" hreflang="en-us" href="https://dominickrei.github.io/post/iot-device-privacy/" />
 
   
   
@@ -72,6 +72,9 @@
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -220,9 +223,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -268,8 +271,6 @@
   
 
   
-    <link rel="alternate" href="/tag/%E5%BC%80%E6%BA%90/index.xml" type="application/rss+xml" title="Dominick&#39;s Homepage" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -278,7 +279,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://dominickrei.github.io/tag/%E5%BC%80%E6%BA%90/" />
+  <link rel="canonical" href="https://dominickrei.github.io/post/iot-device-privacy/" />
 
   
   
@@ -301,33 +302,82 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Dominick&#39;s Homepage" />
-  <meta property="og:url" content="https://dominickrei.github.io/tag/%E5%BC%80%E6%BA%90/" />
-  <meta property="og:title" content="开源 | Dominick&#39;s Homepage" />
-  <meta property="og:description" content="PhD Student" /><meta property="og:image" content="https://dominickrei.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://dominickrei.github.io/post/iot-device-privacy/" />
+  <meta property="og:title" content="Defending Against Packet-Size Side-Channel Attacks in Iot Networks | Dominick&#39;s Homepage" />
+  <meta property="og:description" content="Applying local differential privacy to a sequence of packets" /><meta property="og:image" content="https://dominickrei.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://dominickrei.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2020-12-13T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2022-02-05T12:38:08-05:00"
+      />
     
+    <meta property="article:modified_time" content="2022-02-05T12:38:08-05:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dominickrei.github.io/post/iot-device-privacy/"
+  },
+  "headline": "Defending Against Packet-Size Side-Channel Attacks in Iot Networks",
+  
+  "datePublished": "2022-02-05T12:38:08-05:00",
+  "dateModified": "2022-02-05T12:38:08-05:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dominick Reilly"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dominick's Homepage",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dominickrei.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Applying local differential privacy to a sequence of packets"
+}
+</script>
+
+  
+
+  
+
   
 
   
 
 
 
-  
-
-  
 
 
-
-
-
-  <title>开源 | Dominick&#39;s Homepage</title>
+  <title>Defending Against Packet-Size Side-Channel Attacks in Iot Networks | Dominick&#39;s Homepage</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="e3910f2af5b6c150315e00d56f208424" >
 
   
   
@@ -542,6 +592,34 @@
         
         
         
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
           
         
 
@@ -642,7 +720,9 @@
   </div>
 
   <div class="page-body">
-    
+    <article class="article">
+
+  
 
 
 
@@ -660,77 +740,19 @@
   
   
   
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>开源</h1>
+<div class="article-container pt-3">
+  <h1>Defending Against Packet-Size Side-Channel Attacks in Iot Networks</h1>
 
   
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
+  <p class="page-subtitle">Applying local differential privacy to a sequence of packets</p>
   
 
-  
   
     
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/post/getting-started/" >Welcome to Wowchemy, the website builder for Hugo</a>
-    </div>
-
-    
-    <a href="/post/getting-started/"  class="summary-link">
-      <div class="article-style">
-        Welcome 👋 We know that first impressions are important, so we&rsquo;ve populated your new site with some initial content to help you get familiar with everything in no time.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
 
-  
-  
-  
-  
-  <div>
-    
-
-  <span class="author-highlighted">
-      Dominick Reilly</span>, <span >
-      吳恩達</span>
-  </div>
   
   
 
@@ -740,7 +762,7 @@
     
       
     
-    Dec 13, 2020
+    Feb 5, 2022
   </span>
   
 
@@ -749,7 +771,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    2 min read
   </span>
   
 
@@ -762,36 +784,198 @@
 
   
   
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/demo/">Demo</a>, <a href="/category/%E6%95%99%E7%A8%8B/">教程</a></span>
-  
 
 </div>
 
-      
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p><a href="https://ieeexplore.ieee.org/document/8461330" target="_blank" rel="noopener">Link to Paper</a></p>
+<h2 id="motivation">Motivation</h2>
+<ul>
+<li>IoT devices are ubiquitous and communicate packets over wireless networks</li>
+<li>Statistical analysis can be performed on these packets, regardless of content encryption, to reveal information about the packet
+<ul>
+<li>Known as side-channel attack</li>
+<li>This paper <strong>focuses on analysis on packet size</strong></li>
+</ul>
+</li>
+<li>Existing solutions do not provide tunable or optimized privacy</li>
+</ul>
+<h2 id="technical-summary">Technical Summary</h2>
+<ul>
+<li>Observe a sequence of packet sizes: $X_1, X_2, &hellip;, X_n : X_i \in \mathcal{X}$ where $\mathcal{X}$ is the set of all possible packet sizes
+<ul>
+<li>Each $X_i$ is assumed to be i.i.d</li>
+</ul>
+</li>
+<li>Each observed packet size follows a distribution $p_v(X=x)$ that is a member of a family of distribtions denoted $\mathcal{P}$
+<ul>
+<li>$\mathcal{P}$ may represent many different IoT devices (a camera likely sends larger packets than a sleep monitor,) or different states of the same IoT device (a device in <em>active</em> mode likely sends larger packets than a device in <em>sleep</em> mode.)</li>
+</ul>
+</li>
+<li>Provide privacy by padding the packet to a size that is determined by a conditional distribution, $q(\hat{\mathcal{X}} = \hat{x} | X = x)$. Where $\hat{x}$ is the modified packet size and $\hat{\mathcal{X}}$ is the set of possible obfuscated packet sizes</li>
+<li>Define heuristics for utility. Average and maximum bandwidth are shown</li>
+<li>Local Differential Privacy (LDP) constraint:
+<ul>
+<li>Can use Bayes Theorem to represent in terms of $q$</li>
+</ul>
+</li>
+</ul>
+<p>$$\small\frac{P(X \sim p_v | \hat{X} = \hat{x})}{P(X \sim p_{v'} | \hat{X} = \hat{x})} \leq \frac{P(X \sim p_v)}{P(X \sim p_{v'})} \cdot e^\epsilon \quad (1)$$</p>
+<ul>
+<li>By optimizing $q(\hat{\mathcal{X}} = \hat{x} | X = x)$ with respect to either of two heuristics and while satisfying the LDP constraint (as well as trivial constraints that ensure $q$ is a proper probability distribution,) we obtain a mechanism for obfuscating packet size in a way that satisfies LDP</li>
+</ul>
+<!-- $$\small\stackrel{\mbox{Bayes}}{\Rightarrow} \frac{ \sum_{i=1}^{|\mathcal{X}|} p_v(x_i) \cdot q(\hat{X} = \hat{x}_j | X = x_i) } { \sum_{i=1}^{|\mathcal{X}|} }$$ -->
+<h2 id="takeaways">Takeaways</h2>
+<ul>
+<li>Using a heuristic and privacy constraint, we can create a provably private mechanism by solving the emerging optimization problem</li>
+<li>The mechanism in this paper is relatively simple ($q$ is a discrete distribution,) but can be extended to more complex mechanisms</li>
+</ul>
+
     </div>
 
     
 
-  </div>
-  <div class="ml-3">
-    
-    
-    
-    <a href="/post/getting-started/" >
-      <img src="/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_150x0_resize_q75_lanczos.jpg" alt="Welcome to Wowchemy, the website builder for Hugo" loading="lazy">
-    </a>
-    
-  </div>
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/data-privacy/">Data Privacy</a>
+  
+  <a class="badge badge-light" href="/tag/local-differential-privacy/">Local Differential Privacy</a>
+  
+  <a class="badge badge-light" href="/tag/paper-summary/">Paper Summary</a>
+  
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
     
   
-
   
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://dominickrei.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hudac950c238528531f5ddc530a9db803b_141156_270x270_fill_q75_lanczos_center.jpg" alt="Dominick Reilly"></a>
+    
 
-</div>
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://dominickrei.github.io/">Dominick Reilly</a></h5>
+      <h6 class="card-subtitle">PhD Student</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dominickrei" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dominickrei/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
   </div>
 
   <div class="page-footer">

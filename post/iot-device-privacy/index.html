@@ -792,6 +792,47 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="/slides/Defending%20Against%20Packet-Size%20Side-Channel%20Attacks%20in%20IoT%20Networks.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
@@ -804,18 +845,22 @@
       <p><a href="https://ieeexplore.ieee.org/document/8461330" target="_blank" rel="noopener">Link to Paper</a></p>
 <h2 id="motivation">Motivation</h2>
 <ul>
-<li>IoT devices are ubiquitous and communicate packets over wireless networks</li>
+<li>IoT devices are ubiquitous and communicate with one another over wireless networks
+<ul>
+<li>These communications (packets) can be intercepted and observed by an adversary. Typically the content is encrypted to prevent sensitive data leakage</li>
+</ul>
+</li>
 <li>Statistical analysis can be performed on these packets, regardless of content encryption, to reveal information about the packet
 <ul>
 <li>Known as side-channel attack</li>
-<li>This paper <strong>focuses on analysis on packet size</strong></li>
+<li>This paper focuses on side-channel attacks against <strong>packet size</strong></li>
 </ul>
 </li>
 <li>Existing solutions do not provide tunable or optimized privacy</li>
 </ul>
 <h2 id="technical-summary">Technical Summary</h2>
 <ul>
-<li>Observe a sequence of packet sizes: $X_1, X_2, &hellip;, X_n : X_i \in \mathcal{X}$ where $\mathcal{X}$ is the set of all possible packet sizes
+<li>We observe a sequence of packet sizes: $X_1, X_2, &hellip;, X_n : X_i \in \mathcal{X}$ where $\mathcal{X}$ is the set of all possible packet sizes
 <ul>
 <li>Each $X_i$ is assumed to be i.i.d</li>
 </ul>

@@ -5,30 +5,12 @@
     <link>https://dominickrei.github.io/tag/speech/</link>
       <atom:link href="https://dominickrei.github.io/tag/speech/index.xml" rel="self" type="application/rss+xml" />
     <description>Speech</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 06 Feb 2022 16:16:47 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominickrei.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Speech</title>
       <link>https://dominickrei.github.io/tag/speech/</link>
     </image>
-    
-    <item>
-      <title>Multimodal Learning for Classroom Activity Detection</title>
-      <link>https://dominickrei.github.io/post/multimodel-cad/</link>
-      <pubDate>Sun, 06 Feb 2022 16:16:47 -0500</pubDate>
-      <guid>https://dominickrei.github.io/post/multimodel-cad/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1910.13799&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link to Paper&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;We want to automatically evaluate the quantity and quality of interaction within the classroom, helping teachers improve their pedagogy
-&lt;ul&gt;
-&lt;li&gt;e.g., measuring proportion of lecturing to discussion or measuring how many unique students the teacher interacts with&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Difficult problem:&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>SocialBit</title>

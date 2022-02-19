@@ -20,18 +20,22 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/8461330&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link to Paper&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;IoT devices are ubiquitous and communicate packets over wireless networks&lt;/li&gt;
+&lt;li&gt;IoT devices are ubiquitous and communicate with one another over wireless networks
+&lt;ul&gt;
+&lt;li&gt;These communications (packets) can be intercepted and observed by an adversary. Typically the content is encrypted to prevent sensitive data leakage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Statistical analysis can be performed on these packets, regardless of content encryption, to reveal information about the packet
 &lt;ul&gt;
 &lt;li&gt;Known as side-channel attack&lt;/li&gt;
-&lt;li&gt;This paper &lt;strong&gt;focuses on analysis on packet size&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;This paper focuses on side-channel attacks against &lt;strong&gt;packet size&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Existing solutions do not provide tunable or optimized privacy&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;technical-summary&#34;&gt;Technical Summary&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Observe a sequence of packet sizes: $X_1, X_2, &amp;hellip;, X_n : X_i \in \mathcal{X}$ where $\mathcal{X}$ is the set of all possible packet sizes
+&lt;li&gt;We observe a sequence of packet sizes: $X_1, X_2, &amp;hellip;, X_n : X_i \in \mathcal{X}$ where $\mathcal{X}$ is the set of all possible packet sizes
 &lt;ul&gt;
 &lt;li&gt;Each $X_i$ is assumed to be i.i.d&lt;/li&gt;
 &lt;/ul&gt;
